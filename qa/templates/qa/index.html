@@ -1,0 +1,205 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Qaz Assessment</title>
+        <link href="//db.onlinewebfonts.com/c/ee3bd7a194ed3ae13f0166ae142d4331?family=Superclarendon" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/qa.css' %}">
+    </head>
+    <body>
+        <div class="main" id="header">
+            <div class="header">
+                <nav class="navbar-menu" id="navigation">
+                    <div class="navbar-item">
+                        <div class="logo">
+                            <span style="color: #DEB71C;">Qaz</span><br>
+                            <span style="color: white;">Assessment</span>
+                        </div>
+                    </div>
+                    <div class="navbar-item">
+                        <ul class="menu-list">
+                            <li class="menu-link"><a href="#header">Главная</a></li>
+                            <li class="menu-link"><a href="#services">Наши Услуги</a></li>
+                            <li class="menu-link"><a href="#contactus">Контакты</a></li>
+                            <li class="menu-link"><a href="#certificates">Наши Достижения</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <hr style="color: #E6D5B8;">
+            </div>
+            <div class="content">
+                <div class="info">
+                    <h1>Оцениваем имущество, ценим Ваше время!</h1>
+                </div>
+                <div class="description">
+                    <h3>
+                        Компания осуществляет услуги в сфере оценочной деятельности. Мы гарантируем 
+                        качество услуг. Лучший сервис за лояльные цены
+                    </h3>
+                </div>
+                <div class="order">
+                    <a href="#contactus"><button type="button" class="rank">Оценить стоимость &rarr;</button></a>
+                    <br>
+                    <span class="desc">Нажмите на кнопку чтобы оставить заявку</span>
+                </div>
+            </div>
+        </div>
+        <div class="services" id="services">
+            <h1>Наши услуги</h1>
+            <div class="service-list">
+                <div id="first"    class="service"><h3>Оценка жилых домов</h3></div>
+                <div id="second"   class="service"><h3>Оценка земельных участков</h3></div>
+                <div id="third"    class="service"><h3>Оценка зданий, сооружений</h3></div>
+                <div id="fourth"   class="service"><h3>Оценка ущерба авто</h3></div>
+                <div id="fifth"    class="service"><h3>Оценка дач, садовых домов</h3></div>
+                <div id="sixth"    class="service"><h3>Оценка объектов незавершенного строительства</h3></div>
+                <div id="seventh"  class="service"><h3>Оценка транспорта</h3></div>
+                <div id="eight"    class="service"><h3>Оценка спец.техники</h3></div>
+                <div id="ninth"    class="service"><h3>Оценка авто</h3></div>
+                <div id="tenth"    class="service"><h3>Оценка ущерба имущества</h3></div>
+                <div id="eleventh" class="service"><h3>Оценка квартир</h3></div>
+                <div id="twelfth"  class="service"><h3>Оценка заводов, производственных баз, цехов</h3></div>
+            </div>
+        </div>
+        <div class="contacts" id="contactus">
+            <div class="cons">
+                <div class="data"><span class="nashi"><b>Наши контакты</b></span></div>
+                <div class="data"><img src="{% static 'media/geo.svg' %}"><span class="mails">г. Алматы, ул. Муратбаева 180, БЦ Гермес, 5 этаж</span></div>
+                <div class="data"><img src="{% static 'media/mail.svg' %}"><span class="mails">qazassessment@gmail.com</span></div>
+                <div class="data"><img src="{% static 'media/phone.svg' %}"><span class="mails">+7 775 582 74 26 <br>+7 747 849 93 03</span></div>
+            </div>
+            <div class="cons">
+                <div class="form-ocenka">
+                    <div class="form_main_text">
+                        <h1>Услуга по оценке</h1>
+                        <span class="small_text">Оставьте ваши данные и наши менеджера с вами свяжутся</span>
+                    </div>
+                    <form class="form" method="POST" action="https://formspree.io/f/mrgdljpd">
+                        <label class="form_label" for="full_name" required>Имя</label>
+                        <input class="form_input" type="text" name="full_name" id="full_name" placeholder="Enter name">
+                        <label class="form_label" for="phone_number" required>Номер телефона</label>
+                        <input class="form_input" type="phone" name="phone" id="phone_number" placeholder="+7 (777) 777 77 77">
+                        <input class="submit" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="certificates">
+            <h1>Наши достижения</h1>
+            <br>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <img class="carousel__photo initial" src="{% static 'media/Certificate_1.png' %}">
+                    <img class="carousel__photo" src="{% static 'media/Certificate_3.jpeg' %}">
+                    <img class="carousel__photo" src="{% static 'media/Certificate_4.jpeg' %}">
+                    <img class="carousel__photo" src="{% static 'media/Certificate_5.jpeg' %}">
+                    <img class="carousel__photo" src="{% static 'media/Certificate_6.jpeg' %}">
+                    <img class="carousel__photo" src="{% static 'media/Certificate_7.jpeg' %}">
+                    <div class="carousel__button--next"></div>
+                    <div class="carousel__button--prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="cons">
+                <div class="data"><img src="{% static 'media/geo.svg' %}"><span class="mails">г. Алматы, ул. Муратбаева 180, БЦ Гермес, 5 этаж</span></div>
+                <div class="data"><img src="{% static 'media/mail.svg' %}"><span class="mails">qazassessment@gmail.com</span></div>
+                <div class="data"><img src="{% static 'media/phone.svg' %}"><span class="mails">+7 775 582 74 26 <br>+7 747 849 93 03</span></div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navigation");
+            var sticky = navbar.offsetTop; 
+            function myFunction() {    
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+            !(function(d){
+                var itemClassName = "carousel__photo";
+                items = d.getElementsByClassName(itemClassName),
+                totalItems = items.length,
+                slide = 0,
+                moving = true; 
+                function setInitialClasses() {
+                    items[totalItems - 1].classList.add("prev");
+                    items[0].classList.add("active");
+                    items[1].classList.add("next");
+                }
+                function setEventListeners() {
+                    var next = d.getElementsByClassName('carousel__button--next')[0],
+                        prev = d.getElementsByClassName('carousel__button--prev')[0];
+                    next.addEventListener('click', moveNext);
+                    prev.addEventListener('click', movePrev);
+                }
+                function disableInteraction() {
+                    moving = true;
+                    setTimeout(function(){
+                        moving = false
+                    }, 500);
+                }
+                function moveCarouselTo(slide) {
+                    if(!moving) {
+                        disableInteraction();
+                        var newPrevious = slide - 1,
+                            newNext = slide + 1,
+                            oldPrevious = slide - 2,
+                            oldNext = slide + 2;
+                        if ((totalItems - 1) > 3) {
+                            if (newPrevious <= 0)
+                                oldPrevious = (totalItems - 1);
+                            else if (newNext >= (totalItems - 1))
+                                oldNext = 0;
+                            if (slide === 0) {
+                                newPrevious = (totalItems - 1);
+                                oldPrevious = (totalItems - 2);
+                                oldNext = (slide + 1);
+                            } else if (slide === (totalItems -1)) {
+                                newPrevious = (slide - 1);
+                                newNext = 0;
+                                oldNext = 1;
+                            }
+                            items[oldPrevious].className = itemClassName;
+                            items[oldNext].className = itemClassName;
+                            items[newPrevious].className = itemClassName + " prev";
+                            items[slide].className = itemClassName + " active";
+                            items[newNext].className = itemClassName + " next";
+                        }
+                    }
+                }
+                function moveNext() {
+                    if (!moving) {
+                        if (slide === (totalItems - 1))
+                            slide = 0;
+                        else
+                            ++slide;
+                        moveCarouselTo(slide);
+                    }
+                }
+                function movePrev() {
+                    if (!moving) {
+                        if (slide === 0)
+                            slide = (totalItems - 1);
+                        else
+                            --slide;
+                        moveCarouselTo(slide);
+                    }
+                }
+                function initCarousel() {
+                    setInitialClasses();
+                    setEventListeners();
+                    moving = false;
+                }
+                initCarousel();
+            }(document));
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>
+</html>
