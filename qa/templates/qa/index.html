@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{% static 'css/qa.css' %}">
     </head>
     <body>
-        <div class="main" id="header">
+        <div class="main" id="header" style="background-image: url({% static '/media/main.png' %})">
             <div class="header">
                 <nav class="navbar-menu" id="navigation">
                     <div class="navbar-item">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="description">
                     <h3>
-                        Компания осуществляет услуги в сфере оценочной деятельности. Мы гарантируем 
+                        Компания осуществляет услуги в сфере оценочной деятельности. Мы гарантируем
                         качество услуг. Лучший сервис за лояльные цены
                     </h3>
                 </div>
@@ -50,21 +50,21 @@
         <div class="services" id="services">
             <h1>Наши услуги</h1>
             <div class="service-list">
-                <div id="first"    class="service"><h3>Оценка жилых домов</h3></div>
-                <div id="second"   class="service"><h3>Оценка земельных участков</h3></div>
-                <div id="third"    class="service"><h3>Оценка зданий, сооружений</h3></div>
-                <div id="fourth"   class="service"><h3>Оценка ущерба авто</h3></div>
-                <div id="fifth"    class="service"><h3>Оценка дач, садовых домов</h3></div>
-                <div id="sixth"    class="service"><h3>Оценка объектов незавершенного строительства</h3></div>
-                <div id="seventh"  class="service"><h3>Оценка транспорта</h3></div>
-                <div id="eight"    class="service"><h3>Оценка спец.техники</h3></div>
-                <div id="ninth"    class="service"><h3>Оценка авто</h3></div>
-                <div id="tenth"    class="service"><h3>Оценка ущерба имущества</h3></div>
-                <div id="eleventh" class="service"><h3>Оценка квартир</h3></div>
-                <div id="twelfth"  class="service"><h3>Оценка заводов, производственных баз, цехов</h3></div>
+                <div id="first"    class="service" style="background-image: url({% static '/media/service_1.png' %})"><h3>Оценка жилых домов</h3></div>
+                <div id="second"   class="service" style="background-image: url({% static '/media/service_2.png' %})"><h3>Оценка земельных участков</h3></div>
+                <div id="third"    class="service" style="background-image: url({% static '/media/service_3.png' %})"><h3>Оценка зданий, сооружений</h3></div>
+                <div id="fourth"   class="service" style="background-image: url({% static '/media/service_4.png' %})"><h3>Оценка ущерба авто</h3></div>
+                <div id="fifth"    class="service" style="background-image: url({% static '/media/service_5.png' %})"><h3>Оценка дач, садовых домов</h3></div>
+                <div id="sixth"    class="service" style="background-image: url({% static '/media/service_6.png' %})"><h3>Оценка объектов незавершенного строительства</h3></div>
+                <div id="seventh"  class="service" style="background-image: url({% static '/media/service_7.png' %})"><h3>Оценка транспорта</h3></div>
+                <div id="eight"    class="service" style="background-image: url({% static '/media/service_8.png' %})"><h3>Оценка спец.техники</h3></div>
+                <div id="ninth"    class="service" style="background-image: url({% static '/media/service_9.png' %})"><h3>Оценка авто</h3></div>
+                <div id="tenth"    class="service" style="background-image: url({% static '/media/service_10.png' %})"><h3>Оценка ущерба имущества</h3></div>
+                <div id="eleventh" class="service" style="background-image: url({% static '/media/service_11.jpg' %})"><h3>Оценка квартир</h3></div>
+                <div id="twelfth"  class="service" style="background-image: url({% static '/media/service_12.jpg' %})"><h3>Оценка заводов, производственных баз, цехов</h3></div>
             </div>
         </div>
-        <div class="contacts" id="contactus">
+        <div class="contacts" id="contactus" style="background: url('static/media/oczenka-biznesa\ 1.png')">
             <div class="cons">
                 <div class="data"><span class="nashi"><b>Наши контакты</b></span></div>
                 <div class="data"><img src="{% static 'media/geo.svg' %}"><span class="mails">г. Алматы, ул. Муратбаева 180, БЦ Гермес, 5 этаж</span></div>
@@ -88,7 +88,7 @@
             </div>
         </div>
         <div class="certificates">
-            <h1>Наши достижения</h1>
+            <h1>Сертификаты</h1>
             <br>
             <div class="carousel-wrapper">
                 <div class="carousel">

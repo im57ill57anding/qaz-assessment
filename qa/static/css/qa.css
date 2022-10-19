@@ -9,7 +9,6 @@ body, html {
 
 .main {
     height: 874px;
-    background-image: url('{{ STATIC_URL }}../media/main.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,54 +123,6 @@ a{
     align-content: flex-start;
 }
 
-#first{
-    background-image: url('{{ STATIC_URL }}../media/service_1.png');
-}
-
-#second{
-    background-image: url('{{ STATIC_URL }}../media/service_2.png');
-}
-
-#third{
-    background-image: url('{{ STATIC_URL }}../media/service_3.png');
-}
-
-#fourth{
-    background-image: url('{{ STATIC_URL }}../media/service_4.png');
-}
-
-#fifth{
-    background-image: url('{{ STATIC_URL }}../media/service_5.png');
-}
-
-#sixth{
-    background-image: url('{{ STATIC_URL }}../media/service_6.png');
-}
-
-#seventh{
-    background-image: url('{{ STATIC_URL }}../media/service_7.png');
-}
-
-#eight{
-    background-image: url('{{ STATIC_URL }}../media/service_8.png');
-}
-
-#ninth{
-    background-image: url('{{ STATIC_URL }}../media/service_9.png');
-}
-
-#tenth{
-    background-image: url('{{ STATIC_URL }}../media/service_10.png');
-}
-
-#eleventh{
-    background-image: url('{{ STATIC_URL }}../media/service_11.jpg');
-}
-
-#twelfth{
-    background-image: url('{{ STATIC_URL }}../media/service_12.jpg');
-}
-
 .service{
     width: 350px;
     height: 200px;
@@ -190,7 +141,6 @@ a{
 
 .contacts{
     height: 900px;
-    background: url('{{ STATIC_URL }}../media/oczenka-biznesa\ 1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
